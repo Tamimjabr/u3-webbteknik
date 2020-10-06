@@ -1,0 +1,105 @@
+@charset "UTF-8";
+html{
+  font-size: 16px;
+}
+body, html{
+  height: 100%;
+}
+body{
+  padding:0 10px;
+  margin: 0px;
+  display: grid;
+  grid-template-columns: auto minmax(200px ,1000px) auto;
+  grid-template-rows: 75px auto auto;
+  grid-template-areas: 
+  ". nav ."
+  ". main ."
+  ". footer .";
+}
+nav ul{
+  list-style: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+nav a:link,
+nav a:visited {
+  box-shadow: 6px 6px 10px black;
+}
+nav a:hover,
+nav a:active {
+  background-color: black;
+  color: burlywood;
+  box-shadow: 1px 1px 10px black;
+  transform: translate(5px, 5px);
+}
+.selected{
+  background-color: white;
+  color: black;
+}
+#globalNav{
+  grid-area: nav;
+  background-color: rebeccapurple;
+}
+#globalNav ul{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#globalNav ul li a{
+  padding: 10px;
+}
+main{
+  grid-area: main;
+  background-color: salmon;
+}
+/*styling main in start*/
+#mainStart{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "about aktuellt";
+  gap: 10px;
+  padding: 10px;
+}
+#mainStart aside{
+  grid-area: aktuellt;
+}
+.aktuellt{
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+#about{
+  grid-area: about;
+}
+
+footer{
+  grid-area: footer;
+  background-color: seagreen;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer a{
+  color: black;
+  text-decoration: none;
+}
+footer ul{
+  list-style: none;
+}
+footer ul li{
+  padding: 7px;
+}
+#contactFooter{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
