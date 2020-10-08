@@ -10,11 +10,24 @@ body{
   margin: 0px;
   display: grid;
   grid-template-columns: auto minmax(200px ,1000px) auto;
-  grid-template-rows: 75px auto auto;
+  grid-template-rows:100px 100px auto auto;
   grid-template-areas: 
+  ". header."
   ". nav ."
   ". main ."
   ". footer .";
+}
+header{
+  grid-area: header;
+  background-color: yellow;/*todo change color*/
+  
+}
+header a{
+  text-decoration: none;
+  
+}
+header h1{
+  margin-left: 30px;
 }
 nav ul{
   list-style: none;
@@ -44,9 +57,9 @@ nav a:active {
 }
 #globalNav{
   grid-area: nav;
-  background-color: rebeccapurple;
+  background-color: rebeccapurple;/*todo change the color*/
 }
-#globalNav ul{
+#globalNav > ul{
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -55,9 +68,26 @@ nav a:active {
 #globalNav ul li a{
   padding: 10px;
 }
+#contactLink{
+ position: relative;
+}
+#contactList{
+  position: absolute;
+  z-index: 20;
+  display: none;
+  padding: 10px;
+  background-color: cornflowerblue; /*todo change the color*/
+}
+#contactList li a{
+  display: block;
+}
+#contactLink:hover > ul{
+  display: flex;
+  flex-direction: column;
+}
 main{
   grid-area: main;
-  background-color: salmon;
+  background-color: salmon;/*todo change the color*/
 }
 /*styling main in start*/
 #mainStart{
@@ -69,6 +99,10 @@ main{
 }
 #mainStart aside{
   grid-area: aktuellt;
+}
+#mainAvailable{
+  display: grid;
+  grid-template-columns:1fr 2fr;
 }
 .aktuellt{
   padding: 10px;
@@ -84,7 +118,7 @@ img{
 
 footer{
   grid-area: footer;
-  background-color: seagreen;
+  background-color: seagreen;/*todo change the color*/
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
