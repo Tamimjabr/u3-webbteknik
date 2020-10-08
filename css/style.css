@@ -78,6 +78,9 @@ main{
 #about{
   grid-area: about;
 }
+img{
+  max-width: 100%;
+}
 
 footer{
   grid-area: footer;
