@@ -1,4 +1,7 @@
 @charset "UTF-8";
+*{
+  box-sizing: border-box;
+}
 html{
   font-size: 16px;
 }
@@ -47,7 +50,7 @@ nav a:visited {
 nav a:hover,
 nav a:active {
   background-color: black;
-  color: burlywood;
+  color: burlywood;/*todo change the color*/
   box-shadow: 1px 1px 10px black;
   transform: translate(5px, 5px);
 }
@@ -85,6 +88,16 @@ nav a:active {
   display: flex;
   flex-direction: column;
 }
+#availableNav ul{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#availableNav ul li a{
+  display: block;
+  padding: 10px;
+}
 main{
   grid-area: main;
   background-color: salmon;/*todo change the color*/
@@ -101,8 +114,10 @@ main{
   grid-area: aktuellt;
 }
 #mainAvailable{
+  padding: 10px;
   display: grid;
-  grid-template-columns:1fr 2fr;
+  grid-template-columns:0.5fr 2fr;
+  gap: 10px;
 }
 .aktuellt{
   padding: 10px;
@@ -115,7 +130,9 @@ main{
 img{
   max-width: 100%;
 }
-
+figure{
+text-align: center;
+}
 footer{
   grid-area: footer;
   background-color: seagreen;/*todo change the color*/
