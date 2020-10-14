@@ -163,7 +163,8 @@ margin: 5px;
 .send input{
   padding: 10px;
   border-radius: 10px;
-  background-color:rgb(112, 224, 112) ;
+  background-color:rgb(93, 192, 93) ;
+  font-size: 1.1rem;
 }
 footer{
   grid-area: footer;
