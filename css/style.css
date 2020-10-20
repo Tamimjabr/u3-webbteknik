@@ -148,7 +148,7 @@ text-align: center;
 margin: 5px;
 }
 /*form */
-#problem{
+#problem, #interest{
   padding: 20px;
 }
 #problem fieldset div, #interest fieldset div{

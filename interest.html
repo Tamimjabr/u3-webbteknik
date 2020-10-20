@@ -32,7 +32,7 @@
    <main>
      <form id="interest" method="POST" data-netlify="true">
        <fieldset id="personalInformation">
-         <legend>Personliga Uppgifter</legend>
+         <legend>Personuppgifter</legend>
          <!--! i edge och chrome fungerar inte att ha grid på fieldset dörför skaffar vi div för att använda grid-->
           <div>
             <label for="firstName">*Förnamn:</label>
@@ -41,16 +41,25 @@
             <input type="text" name="last-name" id="lastName" placeholder="Efternamn" required>
             <label for="securityNumber">*Personnummer:</label>
             <input type="text" name="social-security-number" id="securityNumber" placeholder="ÅÅMMDD-XXXX" required>
-            <label for="epost">*E-postadress:</label>
-            <input type="text" name="e-post" id="epost" placeholder="example@hotmail.com" required>
-            
-            <label for="discovered">När upptäcktes felet:</label>
-            <input type="date" name="when-discovered" id="discovered">
-            <label for="description">*Beskrivning av felet:</label>
-            <textarea id="description" rows="5" name="description" placeholder="Här skriver du en beskrivning av felet" required ></textarea>
-          </div>
-          <label ><input type="checkbox" name="entry-permission" > Jag tillåter Roséns fastigheters personal att gå in till min lägenhet med huvudnyckel för att åtgärda felet</label>
        </fieldset>
+       <fieldset>
+         <legend>Kontaktuppgifter</legend>
+         <div>
+          <label for="epost">E-postadress:</label>
+          <input type="text" name="e-post" id="epost" placeholder="someone@example.com">
+          <label for="telefonnummer">*Telefonnummer:</label>
+          <input type="tel" name="phone-number" id="telefonnummer"  placeholder="07x-xxx xxxx" required>
+         </div>
+       </fieldset>
+       <fieldset>
+        <legend>Välj bland lediga lägenheter</legend>
+        <p>Obs! du kan välja flera lägenheter för att anmäla intresse för!</p>
+        <div>
+        <label><input type="checkbox" name="interested-of" value="annerogatan-1c-1203">Annerogatan 1C lgh 1203</label>
+        <label><input type="checkbox" name="interested-of" value="annerogatan-1b-1104">Annerogatan 1B lgh 1104</label>
+        </div>
+      </fieldset>
+       
        <div class="send">
          <input type="submit" value="Skicka felanmälan">
        </div>
