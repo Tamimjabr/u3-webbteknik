@@ -7,7 +7,7 @@ html{
 }
 body, html{
   height: 100%;
-  background-color: wheat;
+
 }
 body{
   padding:0 10px;
@@ -20,14 +20,15 @@ body{
   ". nav ."
   ". main ."
   ". footer .";
+  background-color: #f1f6f9;
 }
 header{
   grid-area: header;
-  background-color: rgb(248, 231, 133);/*todo change color*/
+  background-color: #f1f6f9;
 }
 header a{
   text-decoration: none;
-  color: black;
+  color:  #14274e;
 }
 header h1{
   margin-left: 30px;
@@ -55,11 +56,12 @@ nav ul li a{
 nav a:link,
 nav a:visited {
   box-shadow: 6px 6px 10px black;
+  transition: all 0.4s ease-in-out;
 }
 nav a:hover,
 nav a:active {
   background-color: black;
-  color: burlywood;/*todo change the color*/
+  color: white;
   box-shadow: 1px 1px 10px black;
   transform: translate(5px, 5px);
 }
@@ -69,7 +71,7 @@ nav a:active {
 }
 #globalNav{
   grid-area: nav;
-  background-color: rebeccapurple;/*todo change the color*/
+  background-color: #14274e;
 }
 #globalNav > ul{
   height: 100%;
@@ -85,6 +87,7 @@ nav a:active {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  background-color: #14274e;
 }
 #availableNav ul li a{
   display: block;
@@ -92,7 +95,7 @@ nav a:active {
 }
 main{
   grid-area: main;
-  background-color: salmon;/*todo change the color*/
+  background-color: #f1f6f9;
   padding: 10px;
 }
 /*styling main in start*/
@@ -116,9 +119,13 @@ main{
   padding: 10px;
   border: 1px solid black;
   margin-top: 10px;
+  background-color: white;
+  color:  #14274e;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .aktuellt a{
-  color: black;
+  color:  #14274e;
   text-decoration: black;
   font-size: 1.2rem;
 }
@@ -170,7 +177,8 @@ margin: 5px;
 }
 footer{
   grid-area: footer;
-  background-color: seagreen;/*todo change the color*/
+  background-color: #394867;
+  color: #f1f6f9;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -179,7 +187,7 @@ footer{
   gap: 10px;
 }
 footer a{
-  color: black;
+  color: #f1f6f9;
   text-decoration: none;
 }
 footer ul{
@@ -255,7 +263,6 @@ footer ul li{
     box-shadow: 0 0 0 0;
      }
     nav a:hover, nav a:active {
-    color: burlywood;/*todo change the color*/
     box-shadow:0px 0px 0px;
     transform: translate(0,0);
   }
