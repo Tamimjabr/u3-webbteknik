@@ -26,19 +26,24 @@
            <li><a href="./interest.html">Intresseanmäla</a></li>
          </ul>   
        </li>
-       <li><a href="./policy.html">Policy</a></li>
+       <li><a href="./goodToKnow.html">Bra att veta</a></li>
      </ul>
    </nav>
    <main>
-     <form id="problem" method="POST" data-netlify="true">
-       <fieldset id="place">
-         <legend>Formulär för felanmälan</legend>
+     <form id="interest" method="POST" data-netlify="true">
+       <fieldset id="personalInformation">
+         <legend>Personliga Uppgifter</legend>
          <!--! i edge och chrome fungerar inte att ha grid på fieldset dörför skaffar vi div för att använda grid-->
           <div>
-            <label for="adress">*Adress (där felet uppstod):</label>
-            <input type="text" name="address" id="adress" placeholder="ex. Annerogatan 1C" required>
-            <label for="lgh">*Lgh:</label>
-            <input type="text" name="apartment-nubmer" id="lgh" placeholder="ex. 1104" required>
+            <label for="firstName">*Förnamn:</label>
+            <input type="text" name="first-name" id="firstName" placeholder="Förnamn" required>
+            <label for="lastName">*Efternamn:</label>
+            <input type="text" name="last-name" id="lastName" placeholder="Efternamn" required>
+            <label for="securityNumber">*Personnummer:</label>
+            <input type="text" name="social-security-number" id="securityNumber" placeholder="ÅÅMMDD-XXXX" required>
+            <label for="epost">*E-postadress:</label>
+            <input type="text" name="e-post" id="epost" placeholder="example@hotmail.com" required>
+            
             <label for="discovered">När upptäcktes felet:</label>
             <input type="date" name="when-discovered" id="discovered">
             <label for="description">*Beskrivning av felet:</label>

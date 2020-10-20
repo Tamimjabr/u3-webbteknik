@@ -151,7 +151,7 @@ margin: 5px;
 #problem{
   padding: 20px;
 }
-#problem fieldset div{
+#problem fieldset div, #interest fieldset div{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 20px;
