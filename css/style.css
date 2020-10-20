@@ -7,6 +7,7 @@ html{
 }
 body, html{
   height: 100%;
+  background-color: wheat;
 }
 body{
   padding:0 10px;
@@ -30,6 +31,15 @@ header a{
 }
 header h1{
   margin-left: 30px;
+}
+
+#globalNav input, #globalNav label{
+  display: none;
+}
+#globalNav label {
+  height: 24px;
+  width: 24px;
+  background-image: url('../img/menuicon.png');
 }
 nav ul{
   list-style: none;
@@ -70,23 +80,6 @@ nav a:active {
 #globalNav ul li a{
   padding: 10px;
 }
-#contactLink{
- position: relative;
-}
-#contactList{
-  position: absolute;
-  z-index: 20;
-  display: none;
-  padding: 10px;
-  background-color: cornflowerblue; /*todo change the color*/
-}
-#contactList li a{
-  display: block;
-}
-#contactLink:hover > ul{
-  display: flex;
-  flex-direction: column;
-}
 #availableNav ul{
   padding: 20px;
   display: flex;
@@ -123,6 +116,14 @@ main{
   padding: 10px;
   border: 1px solid black;
   margin-top: 10px;
+}
+.aktuellt a{
+  color: black;
+  text-decoration: black;
+  font-size: 1.2rem;
+}
+.aktuellt a:hover, .aktuellt a:active, footer ul a:hover, footer ul a:active{
+  text-decoration: underline;
 }
 #about{
   grid-area: about;
@@ -175,6 +176,7 @@ footer{
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  gap: 10px;
 }
 footer a{
   color: black;
@@ -190,4 +192,76 @@ footer ul li{
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+@media screen and (max-width:510px){
+  #mainStart{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "aktuellt"
+    "about";
+  }
+  #mainAvailable{
+    grid-template-columns:1fr;
+  }
+  #availableNav ul{
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+
+  }
+  #availableNav ul li a{
+    display: inline-block;
+    padding: 10px;
+  }
+  #problem fieldset div, #interest fieldset div{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 0.6rem;
+  }
+  #personalInformation div input, #contact div input{
+    max-width: 40ch;
+  }
+  body{
+      padding:0 10px;
+      margin: 0px;
+      display: grid;
+      grid-template-columns: auto ;
+      grid-template-rows:min-content 100px auto auto;
+      grid-template-areas: 
+      " nav "
+      "header"
+      " main "
+      "footer ";
+    }
+    #globalNav label{
+      display: inline-block;
+    }
+    #globalNav > ul{
+     display: none;
+     }
+     #globalNav input:checked ~ ul {
+      display: block;
+     }
+    nav ul li {
+     text-align: center;
+    }
+    nav ul li a{
+      display: block;
+
+    }
+    nav a:link,nav a:visited {
+    box-shadow: 0 0 0 0;
+     }
+    nav a:hover, nav a:active {
+    color: burlywood;/*todo change the color*/
+    box-shadow:0px 0px 0px;
+    transform: translate(0,0);
+  }
+}
+@media screen and (max-width:375px){
+  footer ul {
+    padding: 0;
+  }
 }

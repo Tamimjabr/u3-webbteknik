@@ -12,44 +12,45 @@
   </head>
   <body>
     <header>
-     <h1> <a href="./index.html"><i class="fas fa-hotel"></i> Roséns Fastigheter</a></h1>
+      <h1>
+        <a href="./index.html"
+          ><i class="fas fa-hotel"></i> Roséns Fastigheter</a>
+      </h1>
     </header>
+
     <nav id="globalNav">
+      <label for="menuCheckBox"></label>
+      <input type="checkbox" id="menuCheckBox" />
       <ul>
         <li><a href="./index.html" class="selected">Startsidan</a></li>
         <li><a href="./available/apartments.html">Sök Ledigt</a></li>
-        <li id="contactLink">
-          <a href="">Kontakta</a>
-          <ul id="contactList">
-            <li><a href="./problem.html">Felanmäla</a></li>
-            <li><a href="./interest.html">Intresseanmäla</a></li>
-          </ul>   
-        </li>
+        <li><a href="./problem.html">Felanmälan</a></li>
+        <li><a href="./interest.html">Intresseanmälan</a></li>
         <li><a href="./goodToKnow.html">Bra att veta</a></li>
       </ul>
     </nav>
     <main id="mainStart">
       <div>
         <p id="about">
-          Roséns Fastigheter finns sedan 2005. Vi är ett litet fastighetsbolag som
-          erbjuder våra hyresgäster de bästa förutsättningar för ett underbart
-          boende. Vi tänker också på miljö och hållbarhet därför har vi solceller
-          installerade på taket i våra fastigheter.
+          Roséns Fastigheter finns sedan 2005. Vi är ett litet fastighetsbolag
+          som erbjuder våra hyresgäster de bästa förutsättningar för ett
+          underbart boende. Vi tänker också på miljö och hållbarhet därför har
+          vi solceller installerade på taket i våra fastigheter.
         </p>
         <figure>
           <!--todo use srcset according to the mediaquery-->
-          <img src="./img/building900.png" alt="Annerogatan lägenheter">
+          <img src="./img/building900.png" alt="Annerogatan lägenheter" />
           <figcaption>Våra lägenheter i Annerogatan</figcaption>
         </figure>
         <figure>
-          <img src="./img/parkgatan.png" alt="Parkgatan lägenheter">
+          <img src="./img/parkgatan.png" alt="Parkgatan lägenheter" />
           <figcaption>Våra lägenheter i Parkgatan</figcaption>
         </figure>
       </div>
-     
+
       <aside>
         <div class="aktuellt">
-          <h1>Aktuellt!</h1>
+          <h2>Aktuellt!</h2>
           <p>
             Just nu har vi lite störning med porten i Annerogatan 1B som inte
             går att öppna utan nyckel efter kl 21:00<br />
@@ -57,12 +58,31 @@
           </p>
         </div>
         <div class="aktuellt">
-          <h1>Nyhet!</h1>
+          <h2>Nyhet!</h2>
           <p>Just nu går det bra att boka bastun 7 gånger / mån</p>
+        </div>
+        <div class="aktuellt">
+          <a href="./problem.html"><i class="fas fa-tools"></i> Felanmälan</a>
         </div>
       </aside>
     </main>
+    <!--todo copy the same footer to all the pages-->
     <footer>
+      <ul>
+        <li>
+          <a href="./problem.html"><i class="fas fa-tools"></i> Felanmälan</a>
+        </li>
+        <li>
+          <a href="./interest.html"
+            ><i class="fas fa-thumbs-up"></i> Intresseanmälan</a
+          >
+        </li>
+        <li>
+          <a href="./goodToKnow.html"
+            ><i class="fas fa-info-circle"></i> Bra att veta</a
+          >
+        </li>
+      </ul>
       <div id="contactFooter">
         <p>
           Roséns fastigheter AB <br />
@@ -74,15 +94,10 @@
         <a href="tel:037132352"
           ><i class="fas fa-phone"></i> Tel : 0371-32352</a
         >
-        <a href="mailto:kjell@rosens.info?subject= Kontakta Roséns fastigheter"
+        <a href="mailto:kjell@rosens.info?subject=Kontakta-Roséns-fastigheter"
           ><i class="fas fa-envelope"></i> Mail: kjell@rosens.info</a
         >
       </div>
-      <ul>
-        <li><a href="./problem.html">Felanmäla</a></li>
-        <li><a href="./interest.html">Intresseanmäla</a></li>
-        <li><a href="./goodToKnow.html">Bra att veta</a></li>
-      </ul>
     </footer>
   </body>
 </html>
