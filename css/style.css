@@ -38,9 +38,16 @@ header h1{
   display: none;
 }
 #globalNav label {
-  height: 24px;
-  width: 24px;
-  background-image: url('../img/menuicon.png');
+ position: relative;
+ height: 24px;
+ width: 24px;
+}
+/*style the menuIcon*/
+#globalNav label i {
+  font-size: 1.4rem;
+  position: absolute;
+  left: 10px;
+  color: white;
 }
 nav ul{
   list-style: none;
