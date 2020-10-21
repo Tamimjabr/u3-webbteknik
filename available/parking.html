@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ledig-parkering</title>
+  <title>Ledig parkering</title>
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://kit.fontawesome.com/06f6cbcc6e.js" crossorigin="anonymous"></script>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap"
+  rel="stylesheet"/>
 </head>
 <body>
   <header>
@@ -32,8 +35,14 @@
     </nav>
     <div>
       <p>Vill du inte ha ett garage men ändå använda din motorvärmare? Vi erbjuder parkeringsplatser med elutag. Kontakta fastighetsägaren Kjell Rosén för mer information. </p>
-      <!--todo add srcset after mediaquers-->
-      <img src="../img/p-plats900.jpg" alt="">
+      <img src="../img/p-plats300.jpg" alt="Bild på våra parkeringar" 
+      srcset="../img/p-plats300.jpg 300w,
+      ../img/p-plats600.jpg 600w,
+      ../img/p-plats900.jpg 900w
+    "
+    sizes="(max-width:510px) 100vw,
+          (max-width:1000px) 80vw,
+          800px">
     </div>
     
   </main>

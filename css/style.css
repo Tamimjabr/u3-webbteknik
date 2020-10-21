@@ -7,7 +7,6 @@ html{
 }
 body, html{
   height: 100%;
-
 }
 body{
   padding:0 10px;
@@ -21,6 +20,7 @@ body{
   ". main ."
   ". footer .";
   background-color: #f1f6f9;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header{
   grid-area: header;
@@ -29,6 +29,8 @@ header{
 header a{
   text-decoration: none;
   color:  #14274e;
+  font-family: 'Libre Baskerville', serif;
+
 }
 header h1{
   margin-left: 30px;
@@ -179,8 +181,9 @@ margin: 5px;
 .send input{
   padding: 10px;
   border-radius: 10px;
-  background-color:rgb(93, 192, 93) ;
+  background-color:rgb(129, 207, 129) ;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 footer{
   grid-area: footer;

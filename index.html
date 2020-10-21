@@ -9,12 +9,17 @@
       src="https://kit.fontawesome.com/06f6cbcc6e.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <h1>
         <a href="./index.html"
-          ><i class="fas fa-hotel"></i> Roséns Fastigheter</a>
+          ><i class="fas fa-hotel"></i> Roséns Fastigheter</a
+        >
       </h1>
     </header>
     <nav id="globalNav">
@@ -38,11 +43,33 @@
         </p>
         <figure>
           <!--todo use srcset according to the mediaquery-->
-          <img src="./img/building900.png" alt="Annerogatan lägenheter" />
+          <img
+            src="img/building300.png"
+            alt="Annerogatan lägenheter"
+            srcset="
+              img/building300.png 300w,
+              img/building600.png 600w,
+              img/building900.png 900w
+            "
+            sizes="(max-width:510px) 100vw,
+                  (max-width:1000px) 70vw,
+                  900px"
+          />
           <figcaption>Våra lägenheter i Annerogatan</figcaption>
         </figure>
         <figure>
-          <img src="./img/parkgatan.png" alt="Parkgatan lägenheter" />
+          <img
+          src="img/parkgatan300.jpg"
+          alt="Parkgatan lägenheter"
+          srcset="
+            img/parkgatan300.jpg 300w,
+            img/parkgatan600.jpg 600w,
+            img/parkgatan900.jpg 900w
+          "
+          sizes="(max-width:510px) 100vw,
+                (max-width:1000px) 70vw,
+                900px"
+        />
           <figcaption>Våra lägenheter i Parkgatan</figcaption>
         </figure>
       </div>
