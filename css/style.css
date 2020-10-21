@@ -192,6 +192,7 @@ fieldset div input:focus{
   border-radius: 10px;
   background-color:rgb(129, 207, 129) ;
   font-size: 1.1rem;
+  outline: none;
   cursor: pointer;
 }
 footer{
