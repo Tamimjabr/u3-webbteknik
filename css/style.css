@@ -119,7 +119,6 @@ main{
   grid-area: aktuellt;
 }
 #mainAvailable{
-  padding: 10px;
   display: grid;
   grid-template-columns:0.5fr 2fr;
   gap: 10px;
@@ -278,6 +277,18 @@ footer ul li{
   }
 }
 @media screen and (max-width:375px){
+  main{
+   padding: 0px; 
+  }
+  /*adjust the nav to prevent horizontal scroll*/
+  #availableNav ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  #availableNav ul li a{
+   display: block;
+  }
   footer ul {
     padding: 0;
   }
