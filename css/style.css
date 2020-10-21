@@ -173,6 +173,16 @@ margin: 5px;
   padding: 20px;
   gap: 0.6rem;
 }
+fieldset div input{
+  border-radius: 10px;
+  padding: 5px 10px ;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+fieldset div input:focus{
+  background-color: #394867;
+  color: white;
+}
 .send{
   margin-top: 10px;
   text-align: right;
@@ -210,7 +220,7 @@ footer ul li{
   flex-direction: column;
   gap: 7px;
 }
-@media screen and (max-width:510px){
+@media screen and (max-width:550px){
   #mainStart{
     grid-template-columns: 1fr;
     grid-template-areas: 
