@@ -35,14 +35,10 @@
     </nav>
     <div>
       <p>Just nu har vi 2 garage att hyra ut. Skynda och boka ditt grage innan vinter.</p>
-      <img src="../img/garage300.jpg" alt="Bild på våra garage"     
-            srcset="../img/garage300.jpg 300w,
-      ../img/garage600.jpg 600w,
-      ../img/garage900.jpg 900w
-    "
-    sizes="(max-width:550px) 100vw,
-          (max-width:1000px) 80vw,
-          800px">
+      <picture> 
+        <source media="(max-width:550px)" srcset="../img/garage550.jpg">
+      <img src="../img/garage900.jpg" alt="Bild på våra garage">
+    </picture>
     </div>
     
   </main>
